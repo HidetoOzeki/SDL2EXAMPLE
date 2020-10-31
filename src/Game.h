@@ -25,8 +25,6 @@ public:
   void update();
   void render();
   void close();
-  void test1(int x,int y,int xo,int yo);
-  void putlevel(int x,int y,int z,int id);
 
   bool isRunning(){return running;}
 };

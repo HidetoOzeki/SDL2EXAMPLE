@@ -7,7 +7,7 @@ Text::Text(Bitmap* bitmap){
 Text::~Text(){
   delete sprite;
 }
-void Text::test(std::string text,Screen* screen,int x,int y){
+void Text::render(std::string text,Screen* screen,int x,int y){
   for(int i = 0;i < text.length();i++){
     text[i] = std::toupper(text[i]);
   }
