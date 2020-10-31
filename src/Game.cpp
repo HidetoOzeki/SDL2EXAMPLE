@@ -131,7 +131,6 @@ void Game::render(){
   screen->clearzbuffer();
   ball2.render(screen);
   ball.render(screen);
-  text->test("random text with spaces",screen,w/5,h/5);
   if(swp)screen->swap();
   for(int i = 0;i < w*h;i++)pixels[i] = screen->getRaster()[i];
   SDL_UpdateTexture(texture,nullptr,pixels,4*w);

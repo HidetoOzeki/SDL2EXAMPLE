@@ -6,7 +6,7 @@
 #include "Bitmap.h"
 class Text{
   private :
-  std::string str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ ";
+  std::string str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,;:()[]+-=!? ";
   Bitmap* sprite;
   public :
   Text(Bitmap* bitmap);

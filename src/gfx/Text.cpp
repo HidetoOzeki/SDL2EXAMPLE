@@ -13,7 +13,12 @@ void Text::test(std::string text,Screen* screen,int x,int y){
   }
   int length = text.length();
   for(int i = 0;i < length;i++){
-    int offset = str.find(text.at(i));
-      screen->render(sprite,x+i*8,y,offset*8,10*8);
+    int xoffset = str.find(text.at(i));
+    int yoffset = 10;
+    if(xoffset>=26){
+      yoffset=11;
+      xoffset-=26;
+    }
+      screen->render(sprite,x+i*8,y,xoffset*8,yoffset*8);
   }
 }
